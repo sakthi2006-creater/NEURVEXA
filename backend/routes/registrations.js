@@ -37,7 +37,7 @@ const upload = multer({
 
 router.get("/window", (req, res) => {
     const openAt = new Date("2026-08-28T00:00:00+05:30");
-    const closeAt = new Date("2026-09-05T23:59:59+05:30");
+    const closeAt = new Date("2026-09-07T23:59:59+05:30");
   const now = new Date();
   let phase = "open";
   if (now < openAt) phase = "upcoming";
@@ -66,7 +66,7 @@ router.get("/teams", (req, res) => {
   (req, res) => {
     // 1. Deadline check
     const openAt = new Date("2026-08-28T00:00:00+05:30");
-    const closeAt = new Date("2026-09-05T23:59:59+05:30");
+    const closeAt = new Date("2026-09-07T23:59:59+05:30");
     const now = new Date();
     if (now < openAt || now > closeAt) {
       cleanupUploadedTemp(req.files);

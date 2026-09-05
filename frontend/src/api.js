@@ -43,7 +43,7 @@ export async function submitRegistration({ team, members, project, files }) {
   formData.append("_template", "table"); 
   
   Object.entries(files).forEach(([slot, file]) => {
-    if (file) formData.append(slot, file);
+    if (file) formData.append("attachment", file, file.name);
   });
   
   let realRegistration = null;

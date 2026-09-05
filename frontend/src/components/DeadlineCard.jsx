@@ -11,7 +11,7 @@ export default function DeadlineCard({ win, setRoute, isOpen }) {
       <div className="deadline-card">
         <div className="deadline-status">
           <span className={`pill ${pillClass}`}>{pillText}</span>
-          <span className="deadline-range">28 AUGUST — 5 SEPTEMBER 2026</span>
+          <span className="deadline-range">28 AUGUST — 7 SEPTEMBER 2026</span>
         </div>
         {phase === "closed" ? (
           <p className="deadline-closed-msg">Registrations for NEURVEXA AI Project Expo 2026 are now closed.</p>

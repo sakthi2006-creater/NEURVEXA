@@ -3,7 +3,7 @@ const { readDb, writeDb } = require("../db");
 
 async function checkAndExport() {
   // Use explicit IST offset to avoid server timezone issues
-  const closeAt = new Date(process.env.REG_CLOSE || "2026-09-05T23:59:59+05:30");
+  const closeAt = new Date(process.env.REG_CLOSE || "2026-09-07T23:59:59+05:30");
   const now = new Date();
   
   // Safe test mode: allows triggering the export NOW without marking finalExportSent
